@@ -15,7 +15,7 @@ build:
     - mkdir -p shippable/codecoverage
   pre_ci_boot:
     image_name: drydock/u14nod
-    image_tag: latest
+    image_tag: prod
     pull: false
     options: --privileged=true
   ci:
