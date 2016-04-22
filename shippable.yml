@@ -28,7 +28,7 @@ build:
     - ./node_modules/.bin/istanbul cover grunt -- -u tdd
     - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
   push:
-    - docker tag drydock/u14nod:latest thelearningegg/u14nod:latest
+    - docker tag drydock/u14nod:prod thelearningegg/u14nod:latest
     - docker push thelearningegg/u14nod:latest
 
 integrations:
